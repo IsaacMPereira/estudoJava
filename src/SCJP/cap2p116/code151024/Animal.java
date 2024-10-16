@@ -1,4 +1,4 @@
-package SCJP.cap2p116;
+package SCJP.cap2p116.code151024;
 
 class Animal {
     void makeNoise(){
@@ -11,7 +11,7 @@ class Dog extends Animal{
         System.out.println("bark");
     }
     void playDead(){
-        System.out.println("roll over");
+        System.out.println ("roll over");
     }
 }
 
