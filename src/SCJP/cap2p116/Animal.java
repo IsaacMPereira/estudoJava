@@ -2,16 +2,16 @@ package SCJP.cap2p116;
 
 class Animal {
     void makeNoise(){
-        System.out.printf("Make generic noise");
+        System.out.println("Make generic noise");
     }
 }
 
 class Dog extends Animal{
     void makeNoise(){
-        System.out.printf("bark");
+        System.out.println("bark");
     }
     void playDead(){
-        System.out.printf("roll over");
+        System.out.println("roll over");
     }
 }
 
@@ -21,8 +21,10 @@ class CastTest2{
         for(Animal animal : a){
             animal.makeNoise();
             if(animal instanceof Dog){
-//                ((Dog) animal).playDead();
-                animal.playDead();
+//                ((Dog) animal).playDead(); //Casting feito pela IDE
+//                animal.playDead();
+                Dog d = (Dog) animal; //Casting feito pelo livro
+                d.playDead();
             }
         }
     }
